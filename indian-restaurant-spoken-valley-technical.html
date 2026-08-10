@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Indian Restaurant Spokane Valley | Top of India Technical Standard</title>
+
+  <meta name="description" content="Technical operational process standard for implementing, validating, and maintaining the Indian Restaurant Spokane Valley topic for Top of India in Spokane Valley, Washington.">
+
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
+  <link rel="canonical" href="https://topofindiarestaurant.com/indian-restaurant-spokane-valley/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Indian Restaurant Spokane Valley | Top of India Technical Standard">
+  <meta property="og:description" content="Operational documentation covering entity validation, local SEO, AEO, GEO, content QA, and technical implementation for the Indian Restaurant Spokane Valley topic.">
+  <meta property="og:url" content="https://topofindiarestaurant.com/indian-restaurant-spokane-valley/">
+  <meta property="og:site_name" content="Top of India">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Indian Restaurant Spokane Valley | Top of India">
+  <meta name="twitter:description" content="Technical operational documentation for the Indian Restaurant Spokane Valley topic.">
+
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --surface: #ffffff;
+      --text: #222222;
+      --muted: #66645f;
+      --border: #ded9cd;
+      --accent: #8f2f24;
+      --accent-dark: #681f18;
+      --soft: #f0ebe1;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+    }
+
+    .site-header {
+      background: #1f1f1d;
+      color: #ffffff;
+      padding: 54px 24px 48px;
+      border-bottom: 5px solid var(--accent);
+    }
+
+    .header-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #e9c9bd;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 900px;
+      font-size: clamp(2.15rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      max-width: 900px;
+      margin: 20px 0 0;
+      color: #e5e2dc;
+      font-size: 1.1rem;
+    }
+
+    .entity-bar {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .entity-bar span {
+      display: inline-block;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      font-size: 0.9rem;
+    }
+
+    main {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 34px auto 70px;
+    }
+
+    .toc,
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.035);
+    }
+
+    .toc {
+      padding: 26px 28px;
+      margin-bottom: 28px;
+    }
+
+    .toc h2 {
+      margin-top: 0;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+      padding-left: 22px;
+    }
+
+    .toc li {
+      margin: 5px 0;
+    }
+
+    section {
+      padding: 36px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      font-size: clamp(1.55rem, 3vw, 2.15rem);
+      line-height: 1.2;
+      color: #292824;
+    }
+
+    h3 {
+      margin: 34px 0 12px;
+      font-size: 1.22rem;
+      line-height: 1.35;
+      color: var(--accent-dark);
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .definition {
+      padding: 22px 24px;
+      background: var(--soft);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      font-size: 1.05rem;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .data-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fcfbf8;
+    }
+
+    .data-card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent-dark);
+    }
+
+    .workflow-step {
+      padding: 24px;
+      margin: 18px 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fcfbf8;
+    }
+
+    .workflow-step h3 {
+      margin-top: 0;
+    }
+
+    .decision-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+    }
+
+    .decision-table th,
+    .decision-table td {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .decision-table th {
+      background: var(--soft);
+    }
+
+    .qa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .qa-card {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fcfbf8;
+    }
+
+    .qa-card h3 {
+      margin-top: 0;
+    }
+
+    .note {
+      padding: 20px 22px;
+      border-left: 5px solid #b78b3c;
+      background: #faf3e3;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .footer {
+      background: #1f1f1d;
+      color: #e8e5df;
+      padding: 36px 24px;
+    }
+
+    .footer-inner {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .footer p {
+      margin: 6px 0;
+    }
+
+    .footer strong {
+      color: #ffffff;
+    }
+
+    @media (max-width: 760px) {
+      .data-grid,
+      .qa-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 25px 20px;
+      }
+
+      .decision-table,
+      .decision-table tbody,
+      .decision-table tr,
+      .decision-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .decision-table thead {
+        display: none;
+      }
+
+      .decision-table tr {
+        margin-bottom: 16px;
+        border: 1px solid var(--border);
+      }
+
+      .decision-table td {
+        border: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .decision-table td:last-child {
+        border-bottom: 0;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://topofindiarestaurant.com/indian-restaurant-spokane-valley/#webpage",
+        "url": "https://topofindiarestaurant.com/indian-restaurant-spokane-valley/",
+        "name": "Indian Restaurant Spokane Valley | Top of India Technical Standard",
+        "description": "Technical operational process standard for implementing, validating, and maintaining the Indian Restaurant Spokane Valley topic for Top of India.",
+        "datePublished": "2026-08-10",
+        "dateModified": "2026-08-10"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://topofindiarestaurant.com/indian-restaurant-spokane-valley/#article",
+        "headline": "Indian Restaurant Spokane Valley — Technical Operational Process Standard",
+        "mainEntityOfPage": {
+          "@id": "https://topofindiarestaurant.com/indian-restaurant-spokane-valley/#webpage"
+        },
+        "datePublished": "2026-08-10",
+        "dateModified": "2026-08-10"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Technical Documentation Standard</p>
+      <h1>Indian Restaurant Spokane Valley</h1>
+      <p class="subtitle">
+        Operational process documentation for implementing, validating, and maintaining the local restaurant topic for Top of India.
+      </p>
+
+      <div class="entity-bar">
+        <span>Top of India</span>
+        <span>Spokane Valley, Washington</span>
+        <span>(509) 927-0500</span>
+        <span>Published August 10, 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Operational Standard Contents</h2>
+      <ol>
+        <li><a href="#definition">Opening Definition</a></li>
+        <li><a href="#preconditions">Preconditions and Required Inputs</a></li>
+        <li><a href="#workflow">Operational Workflow</a></li>
+        <li><a href="#decisions">Decision Points and Variations</a></li>
+        <li><a href="#qa">Quality Assurance and Validation</a></li>
+        <li><a href="#failures">Common Execution Failures</a></li>
+        <li><a href="#risk">Risk Mitigation Strategies</a></li>
+        <li><a href="#outputs">Expected Outputs and Timelines</a></li>
+        <li><a href="#practitioner-notes">Practitioner Notes</a></li>
+      </ol>
+    </nav>
+
+    <section id="definition">
+      <h2>1. Opening Definition</h2>
+
+      <p class="definition">
+        <strong>Indian Restaurant Spokane Valley is defined as...</strong> a controlled local-search and entity-optimization framework that connects Indian restaurant intent, Spokane Valley geographic intent, the Top of India business identity, verified location information, restaurant-relevant content, local search signals, AEO and GEO extraction readiness, and factual validation within one clearly assigned page environment.
+      </p>
+
+      <p>
+        In operational terms, implementation requires a single page to own the target intent while consistently representing Top of India, its Spokane Valley location, and the information users need when evaluating a local Indian restaurant. The process is not based on repeating an exact-match phrase as frequently as possible. It is based on entity clarity, geographic relevance, accurate content, controlled URL ownership, useful information architecture, and technical validation.
+      </p>
+
+      <p>
+        The target page should therefore function as a precise local-market asset rather than as a generic article about Indian cuisine. Restaurant-specific information must be factual, important statements should be understandable without surrounding context, and any unverifiable attribute should be excluded until validation is available.
+      </p>
+    </section>
+
+    <section id="preconditions">
+      <h2>2. Preconditions and Required Inputs</h2>
+
+      <p>
+        Implementation should begin only after the primary business facts and page-governance inputs are confirmed. These inputs establish the factual baseline for every later SEO, AEO, GEO, editorial, and technical decision.
+      </p>
+
+      <div class="data-grid">
+        <div class="data-card">
+          <strong>Business Entity</strong>
+          Top of India
+        </div>
+
+        <div class="data-card">
+          <strong>Street Address</strong>
+          11114 E Sprague Ave, Spokane Valley, WA 99206
+        </div>
+
+        <div class="data-card">
+          <strong>Phone</strong>
+          (509) 927-0500
+        </div>
+
+        <div class="data-card">
+          <strong>Website</strong>
+          https://topofindiarestaurant.com/
+        </div>
+
+        <div class="data-card">
+          <strong>Primary Topic</strong>
+          Indian Restaurant Spokane Valley
+        </div>
+
+        <div class="data-card">
+          <strong>Canonical Destination</strong>
+          https://topofindiarestaurant.com/indian-restaurant-spokane-valley/
+        </div>
+      </div>
+
+      <h3>Required Factual Inputs</h3>
+
+      <ul>
+        <li>Confirmed business name.</li>
+        <li>Confirmed street address.</li>
+        <li>Confirmed phone number.</li>
+        <li>Confirmed primary website.</li>
+        <li>Defined target topic.</li>
+        <li>Defined geographic target.</li>
+        <li>Defined search intent.</li>
+        <li>Existing site architecture.</li>
+        <li>Canonical destination URL.</li>
+        <li>Verified restaurant-specific information.</li>
+        <li>Existing local entity signals.</li>
+        <li>Available internal-link destinations.</li>
+        <li>Approved validation source.</li>
+        <li>Publication ownership.</li>
+        <li>Technical publishing access.</li>
+      </ul>
+
+      <p>
+        Missing factual inputs should be resolved before production. A draft should not compensate for incomplete source data by inferring menu features, hours, pricing, delivery availability, dietary options, awards, ratings, or other attributes commonly associated with restaurants.
+      </p>
+
+      <h3>Optional Enhancement Inputs</h3>
+
+      <p>
+        Optional inputs can include approved photography, verified menu relationships, approved internal pages, search-query observations, confirmed service features, and other source-backed information. These elements may improve usefulness but are not substitutes for core entity accuracy.
+      </p>
+    </section>
+
+    <section id="workflow">
+      <h2>3. Step-by-Step Operational Workflow</h2>
+
+      <div class="workflow-step">
+        <h3>Step 1 — Establish Entity Ground Truth</h3>
+        <p>
+          Lock the working identity to Top of India, 11114 E Sprague Ave, Spokane Valley, WA 99206, (509) 927-0500, and https://topofindiarestaurant.com/. Compare every draft, metadata field, visible business reference, and internal publishing record against this baseline.
+        </p>
+        <p>
+          Inconsistent name, address, phone, or website information can create ambiguity for users and machine systems. Entity normalization should therefore happen before keyword optimization or content expansion.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 2 — Define Search and Geographic Intent</h3>
+        <p>
+          Treat “Indian Restaurant Spokane Valley” as a combined restaurant-category, cuisine, local geographic, and commercial-discovery query. Spokane Valley is the controlled geographic target for this document.
+        </p>
+        <p>
+          Do not automatically broaden the page to Spokane or nearby markets. Spokane and Spokane Valley can represent different geographic contexts, so additional pages should be created only when separate intent and page ownership can be justified.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 3 — Assign Topic Ownership to the Correct URL</h3>
+        <p>
+          The working canonical destination is https://topofindiarestaurant.com/indian-restaurant-spokane-valley/. Before publishing, inventory existing URLs to determine whether another page already serves substantially the same intent.
+        </p>
+        <p>
+          If an existing asset already owns the topic, enhancement or consolidation may be preferable to creating another competing page. Title, H1, internal-link context, canonical ownership, and body content should all support the same topic.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 4 — Build the Information Architecture</h3>
+        <p>
+          Organize the page around information required for local restaurant discovery and entity understanding. Useful sections can include a direct topic definition, business-location relationship, factual restaurant context, visit and contact information, decision-support information, entity clarification, and concise supporting questions.
+        </p>
+        <p>
+          Do not expand the page with unrelated cuisine history or generalized Indian-food information merely to increase word count.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 5 — Establish Local Entity Signals</h3>
+        <p>
+          Integrate the exact Top of India name, Spokane Valley location, street address, phone number, and website naturally where they materially clarify the entity. Local relevance should come from factual consistency and contextual usefulness rather than exact-match keyword repetition.
+        </p>
+        <p>
+          Important factual statements should explicitly identify the business so that extraction systems do not need to resolve ambiguous pronouns or infer the entity from distant paragraphs.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 6 — Optimize for SEO, AEO, and GEO</h3>
+        <p>
+          SEO implementation should align the title, H1, descriptive headings, topic language, internal links, and user intent. Avoid duplicate local pages and avoid treating keyword density as a primary optimization metric.
+        </p>
+        <p>
+          AEO implementation should include direct definitions, self-contained answer paragraphs, question-led sections where useful, and concise factual explanations. GEO implementation should emphasize explicit entity naming, unambiguous location attribution, structured factual sentences, and content that can be summarized without losing essential context.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 7 — Validate Restaurant-Relevant Content</h3>
+        <p>
+          Review every restaurant-specific statement against approved source information. Reject unverified menu claims, specialties, prices, ratings, awards, delivery statements, reservation claims, dietary options, operating hours, or unsupported superiority language.
+        </p>
+        <p>
+          If a statement cannot be verified, omit it or flag it for review. Plausibility is not sufficient evidence for publication.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 8 — Perform Technical and Editorial QA</h3>
+        <p>
+          Validate the page URL, title and H1 relationship, business identity, Spokane Valley references, internal links, outbound-link count, HTML structure, JSON-LD, duplicate sections, unsupported claims, responsive behavior, and heading hierarchy.
+        </p>
+        <p>
+          Confirm that only one JSON-LD script exists, the graph contains only WebPage and Article nodes, and the body contains only the approved outbound business link.
+        </p>
+      </div>
+
+      <div class="workflow-step">
+        <h3>Step 9 — Publish, Monitor, and Maintain</h3>
+        <p>
+          After publication, periodically review the asset for changed business information, broken links, duplicate topic ownership, content drift, outdated statements, new internal-link opportunities, and technical errors.
+        </p>
+        <p>
+          Maintenance improves information reliability but does not guarantee indexing speed, rankings, traffic, calls, reservations, or revenue.
+        </p>
+      </div>
+    </section>
+
+    <section id="decisions">
+      <h2>4. Decision Points and Variations</h2>
+
+      <table class="decision-table">
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Operational Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>An existing page already targets Indian Restaurant Spokane Valley.</td>
+            <td>Evaluate enhancement or consolidation before creating another URL.</td>
+          </tr>
+
+          <tr>
+            <td>A separate Spokane page exists.</td>
+            <td>Determine whether Spokane and Spokane Valley represent sufficiently distinct geographic intent.</td>
+          </tr>
+
+          <tr>
+            <td>A restaurant attribute cannot be verified.</td>
+            <td>Omit or flag the attribute rather than infer it.</td>
+          </tr>
+
+          <tr>
+            <td>A dedicated menu page exists.</td>
+            <td>Reference it internally when contextually relevant instead of duplicating menu content.</td>
+          </tr>
+
+          <tr>
+            <td>Location information conflicts between sources.</td>
+            <td>Resolve the entity conflict before publication.</td>
+          </tr>
+
+          <tr>
+            <td>Intent is primarily navigational.</td>
+            <td>Prioritize identity, location, contact, and visit-related clarity.</td>
+          </tr>
+
+          <tr>
+            <td>Intent is broader commercial discovery.</td>
+            <td>Provide useful decision information without unsupported superiority claims.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="qa">
+      <h2>5. Quality Assurance and Validation Checks</h2>
+
+      <div class="qa-grid">
+
+        <div class="qa-card">
+          <h3>Entity QA</h3>
+          <ul>
+            <li>Top of India name is correct.</li>
+            <li>Street address is correct.</li>
+            <li>Phone is (509) 927-0500.</li>
+            <li>Website is correct.</li>
+            <li>Spokane Valley is the intended local market.</li>
+          </ul>
+        </div>
+
+        <div class="qa-card">
+          <h3>Content QA</h3>
+          <ul>
+            <li>Primary topic is clear.</li>
+            <li>Restaurant intent is preserved.</li>
+            <li>Geographic intent is preserved.</li>
+            <li>No generic filler dominates the page.</li>
+            <li>No fabricated attributes appear.</li>
+          </ul>
+        </div>
+
+        <div class="qa-card">
+          <h3>SEO QA</h3>
+          <ul>
+            <li>Title and H1 align.</li>
+            <li>Target topic is used naturally.</li>
+            <li>Internal links serve clear purposes.</li>
+            <li>No competing duplicate URL exists.</li>
+            <li>No keyword stuffing is present.</li>
+          </ul>
+        </div>
+
+        <div class="qa-card">
+          <h3>AEO / GEO QA</h3>
+          <ul>
+            <li>Opening definition is direct.</li>
+            <li>Important answers are self-contained.</li>
+            <li>Top of India is explicitly identified.</li>
+            <li>Location relationship is clear.</li>
+            <li>Ambiguous pronouns are minimized.</li>
+          </ul>
+        </div>
+
+        <div class="qa-card">
+          <h3>Technical QA</h3>
+          <ul>
+            <li>HTML is structurally valid.</li>
+            <li>Exactly one JSON-LD script exists.</li>
+            <li>Only WebPage and Article are used.</li>
+            <li>No duplicate schema exists.</li>
+            <li>No placeholders remain.</li>
+          </ul>
+        </div>
+
+        <div class="qa-card">
+          <h3>Validation Source</h3>
+          <p>
+            Use the approved business website as the controlled validation destination:
+          </p>
+          <p>
+            <a href="https://topofindiarestaurant.com/">Top of India official website</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="failures">
+      <h2>6. Common Execution Failures and Why They Occur</h2>
+
+      <h3>Failure 1 — Multiple Near-Identical Local Pages</h3>
+      <p>
+        This occurs when keyword expansion is performed without URL governance. Several pages can begin competing for essentially the same Spokane Valley restaurant intent.
+      </p>
+
+      <h3>Failure 2 — Generic Indian-Food Content</h3>
+      <p>
+        Writers may optimize around cuisine terminology while losing the local restaurant discovery purpose. The resulting page becomes informational filler rather than a focused entity and local-intent asset.
+      </p>
+
+      <h3>Failure 3 — Unsupported Superiority Claims</h3>
+      <p>
+        Statements such as “best,” “top-rated,” or similar claims are sometimes added as promotional language without supporting evidence.
+      </p>
+
+      <h3>Failure 4 — Inconsistent NAP Information</h3>
+      <p>
+        Outdated data sources, copied templates, or manual errors may introduce conflicting name, address, or phone information.
+      </p>
+
+      <h3>Failure 5 — Invented Restaurant Attributes</h3>
+      <p>
+        Generic templates can assume menu items, delivery services, reservations, dietary options, hours, pricing, or other details that have not been verified.
+      </p>
+
+      <h3>Failure 6 — Weak Spokane Valley Connection</h3>
+      <p>
+        A page may place the city phrase in headings but fail to clearly connect Top of India to its actual Spokane Valley location and business identity.
+      </p>
+
+      <h3>Failure 7 — Excessive Exact-Match Repetition</h3>
+      <p>
+        This failure occurs when keyword density is treated as more important than entity clarity, intent coverage, and useful information.
+      </p>
+
+      <h3>Failure 8 — Schema Inflation</h3>
+      <p>
+        Automated tools may add schema types beyond the controlled specification, creating unnecessary complexity and inconsistency.
+      </p>
+
+      <h3>Failure 9 — Excessive Outbound Linking</h3>
+      <p>
+        Authors may add directories, maps, citation sources, or social profiles even when the publication standard allows only one outbound body hyperlink.
+      </p>
+    </section>
+
+    <section id="risk">
+      <h2>7. Risk Mitigation Strategies</h2>
+
+      <p>
+        Maintain a controlled entity record before drafting begins. Compare all visible and structured business information against that record during QA. Review existing URLs before adding any new local page so that one topic does not receive multiple competing owners.
+      </p>
+
+      <p>
+        Require factual validation for restaurant-specific claims. AI-generated or templated content must undergo a manual hallucination review for menu items, prices, hours, ratings, delivery, reservations, awards, dietary features, and similar attributes.
+      </p>
+
+      <p>
+        Reduce template duplication by requiring each section to serve a distinct informational or operational purpose. Internal links should connect meaningful related resources rather than repeatedly target the same phrase. Structured data should follow a fixed schema specification and should be checked for duplicate or unauthorized nodes before deployment.
+      </p>
+
+      <p class="note">
+        <strong>Operational rule:</strong> unverifiable information should be omitted or flagged for validation rather than invented.
+      </p>
+    </section>
+
+    <section id="outputs">
+      <h2>8. Expected Outputs and Timelines</h2>
+
+      <p>
+        A completed implementation should produce one technically valid HTML document with clearly defined local restaurant intent, consistent Top of India entity information, explicit Spokane Valley geographic relevance, search-friendly headings, concise AEO-ready answers, GEO-friendly entity statements, valid WebPage and Article structured data, completed QA checks, and the approved validation-source relationship.
+      </p>
+
+      <p>
+        Implementation time varies depending on the quality of source data, existing site architecture, publishing workflow, and the amount of validation required. Additional work may be necessary when duplicate pages, conflicting business information, uncertain restaurant attributes, or broken site relationships must be resolved.
+      </p>
+
+      <p>
+        Publication timing must not be interpreted as a ranking or indexing forecast. This operational process does not promise search position, traffic volume, calls, reservations, customer acquisition, or revenue.
+      </p>
+    </section>
+
+    <section id="practitioner-notes">
+      <h2>9. Practitioner Notes for Local Agencies</h2>
+
+      <p>
+        Agencies managing restaurant SEO should establish entity truth before content production. Restaurant templates should never overwrite verified business name, address, phone, or website information.
+      </p>
+
+      <p>
+        Spokane Valley intent should be distinguished from nearby-market intent before new location pages are approved. Existing URLs should be inventoried first so that topical ownership remains narrow and intentional.
+      </p>
+
+      <p>
+        Coordinate the page with relevant menu, location, contact, and other verified site resources without reproducing their full contents. Internal linking should help users navigate to a meaningful next step and reinforce site architecture rather than exist solely for keyword repetition.
+      </p>
+
+      <p>
+        Content should work for both human readers and extraction systems. Important statements should explicitly identify Top of India when entity understanding matters. AI-generated drafts should be manually checked for fabricated restaurant features and unsupported commercial claims.
+      </p>
+
+      <p>
+        Avoid unsupported “best,” “top-rated,” or similar superiority language. Periodically revalidate public-facing business details and update the technical asset when verified information changes.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p><strong>Top of India</strong></p>
+      <p>11114 E Sprague Ave, Spokane Valley, WA 99206</p>
+      <p>(509) 927-0500</p>
+      <p>https://topofindiarestaurant.com/</p>
+      <p><strong>Topic:</strong> Indian Restaurant Spokane Valley</p>
+      <p><strong>Last Updated:</strong> August 10, 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
